@@ -102,6 +102,92 @@
         line-height: 1.35;
       }
 
+      /* Support Information styles */
+      .support-section{
+        margin-top: 40px;
+      }
+
+      .support-section h2{
+        font-size: clamp(22px, 3vw, 32px);
+        margin: 0 0 16px;
+      }
+
+      .toc{
+        background: linear-gradient(180deg, var(--card), var(--card2));
+        border-radius: var(--radius);
+        padding: 24px 28px;
+        box-shadow: var(--shadow);
+        margin-bottom: 24px;
+      }
+
+      .toc h3{
+        margin: 0 0 12px;
+        font-size: 18px;
+      }
+
+      .toc ul{
+        margin: 0;
+        padding-left: 20px;
+        list-style: disc;
+      }
+
+      .toc ul li{
+        margin-bottom: 6px;
+      }
+
+      .toc ul li a{
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+      }
+
+      .toc ul li a:hover{
+        text-decoration: underline;
+      }
+
+      .large-card{
+        background: linear-gradient(180deg, var(--card), var(--card2));
+        border-radius: var(--radius);
+        padding: 32px 28px;
+        box-shadow: var(--shadow);
+        margin-bottom: 24px;
+      }
+
+      .large-card h3{
+        margin: 0 0 18px;
+        font-size: 22px;
+      }
+
+      .large-card p{
+        margin: 0 0 14px;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .large-card p:last-of-type{
+        margin-bottom: 0;
+      }
+
+      .back-to-top{
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 22px;
+        background: var(--text);
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+        transition: opacity .15s ease;
+      }
+
+      .back-to-top:hover{
+        opacity: 0.8;
+      }
+
       footer{
         text-align:center;
         margin-top: 22px;
@@ -112,7 +198,7 @@
   </head>
 
   <body>
-    <div class="wrap">
+    <div class="wrap" id="top">
       <header>
         <h1>Apps of ABCDeveloper</h1>
       </header>
@@ -147,7 +233,32 @@
         </a>
       </section>
 
-      <center><p>Support: For questions about Balloons – Pop!, email abcdevelopment99936@gmail.com</p></center>
+      <!-- Support Information -->
+      <section class="support-section">
+        <h2>Support Information</h2>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+          <h3>Table of Contents</h3>
+          <ul>
+            <li><a href="#balloons-pop">Balloons – Pop!</a></li>
+          </ul>
+        </div>
+
+        <!-- Balloons - Pop! -->
+        <div class="large-card" id="balloons-pop">
+          <h3>Balloons – Pop!</h3>
+          <p>Balloons - Pop! (Balloons) is a simple mobile game.</p>
+          <p>To start a new game, the user can press “Play”. After that, they get started on round 1 in which 32 balloons are released. Balloons each individually begin to descend after reaching the top between 0-3 seconds. The user can pop a balloon by tapping on it. To complete the round, pop all of the balloons before the time runs out or before any balloons descend to the bottom of the screen.</p>
+          <p>After a round, 10 seconds are added and the round starts with 5 balloons more than the previous round. However, from round 10 onward, each round adds 1 second more than the previous round, and each round starts with 8 balloons more than the previous round. In later rounds, the balloon descent speed will also begin to slow down by 1.65% of the speed of descent from the previous round.</p>
+          <p>When the user runs out of time or when a balloon reaches the bottom, they are returned to the start screen.</p>
+          <p>The app allows users to select an image from their photo library to decorate balloons. Images are used only during gameplay and are not stored or shared. Users select an image by pressing the “Upload Balloon Face” button. The balloon face resets after every restart. By pressing on the “Turn Sound Off/On” button, the game will toggle on and off the “pop” sound effect for balloons.</p>
+          <p>The user will have a “High Score” displayed which is based on the amount of rounds they complete, and underneath the timer they see their daily high score labelled “Best”.</p>
+          <p>Balloons - Pop! is available on iPhone and iPad.</p>
+          <p>Support contact: abcdevelopment99936@gmail.com</p>
+          <a href="#top" class="back-to-top">Back to the Top</a>
+        </div>
+      </section>
 
       <footer>
         © <span id="year"></span> Andrew Ma 2026
